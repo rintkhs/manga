@@ -19,9 +19,13 @@ FROM base as build
 
 # Install packages needed to build gems
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential git pkg-config libpq-dev libyaml-dev && \
-    rm -rf /var/lib/apt/lists /var/cache/apt/archives
-
+    apt-get install --no-install-recommends -y \
+        build-essential \
+        git \
+        pkg-config \
+        libpq-dev \
+        libyaml-dev && \
+    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives
 # Install application gems
 COPY Gemfile Gemfile.lock ./
 RUN bundle install && \
@@ -38,19 +42,23 @@ RUN bundle exec bootsnap precompile app/ lib/
 RUN chmod +x bin/* && \
     sed -i "s/\r$//g" bin/* && \
     sed -i 's/ruby\.exe$/ruby/' bin/*
-
-# Precompiling assets for production without requiring secret RAILS_MASTER_KEY
+# Precompile assets for production without requiring secret RAILS_MASTER_KEY
 RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
 
 
 # Final stage for app image
 FROM base
-
-# Install packages needed for deployment
+# Install runtime packages
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y curl libsqlite3-0 libvips && \
-    rm -rf /var/lib/apt/lists /var/cache/apt/archives
-
+    apt-get install --no-install-recommends -y \
+        curl \
+        libsqlite3-0 \
+        libvips \
+        libjemalloc2 \
+        sqlite3 \
+        libpq5 && \
+    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives && \
+    mkdir -p /var/lib/apt/lists/partial
 # Copy built artifacts: gems, application
 COPY --from=build /usr/local/bundle /usr/local/bundle
 COPY --from=build /rails /rails
@@ -67,7 +75,3 @@ ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 EXPOSE 3000
 CMD ["./bin/rails", "server"]
 
-# Install base packages
-RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 libpq5 && \
-    rm -rf /var/lib/apt/lists /var/cache/apt/archives
