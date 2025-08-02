@@ -30,31 +30,23 @@
       <%= yield %>
    </main>
 
-   <div id="navArea">
+   <input type="checkbox" id="nav-toggle" class="nav-toggle">
+   <label for="nav-toggle" class="nav-toggle-label">
+     <span></span>
+     <span></span>
+     <span></span>
+   </label>
 
-    <nav>
-      <div class="inner">
-        <ul>
-          <li><a href="#">Text</a></li>
-          <li><a href="#">Text</a></li>
-          <li><a href="#">Text</a></li>
-        </ul>
-      </div>
-    </nav>
+   <nav class="nav">
+     <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Contact</a></li>
+     </ul>
+   </nav>
 
-    <div class="toggle_btn">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <div id="mask"></div>
-
-   </div>
-
-   <main>
-     <h1>Hamburger Menu Sample02</h1>
-   </main>
- 
+   <div class="overlay"></div>
+   
+   
   </body>
 </html>
