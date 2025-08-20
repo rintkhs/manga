@@ -1,17 +1,20 @@
-<h1>漫画投稿</h1>
-<h3>新規投稿ページ</h3>
+<div class="text">
+  <h1>漫画投稿</h1>
+  <h3>新規投稿ページ</h3>
+</div>
+
 <%= form_for @tweet do |f| %>
-    <div class="field">
+    <div class="field1">
         <%= f.label :タイトル %>
         <%= f.text_field :title, :size => 30 %>
     </div>
 
-    <div class="field">
+    <div class="field2">
         <%= f.label :内容 %>
         <%= f.text_field :information, :size => 30 %>
     </div>
 
-    <div class="field">
+    <div class="field3">
       <%= f.label :画像 %>
       <%= f.file_field :image %>
     </div>
@@ -30,4 +33,6 @@
     <%= f.submit "投稿する" %>
 <% end %>
 
+<div class="back">
 <%= link_to "一覧に戻る", tweets_path %>
+</div>

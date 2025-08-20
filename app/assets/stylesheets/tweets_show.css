@@ -1,0 +1,185 @@
+a {
+  text-decoration: none; /* 下線消す */
+  color: #fff;
+}
+
+
+/* ==========================
+   投稿詳細ページ全体
+========================== */
+.text2 h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  color: #E4A77E;
+  text-shadow: 2px 2px #F2C57C;
+  margin-bottom: 30px;
+}
+
+/* ==========================
+   詳細コンテンツ
+========================== */
+.detail {
+  background: #FAF5EE; /* ベースカラー */
+  border: 3px solid #E4A77E; /* メインカラー */
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 6px 6px 0 #F2C57C; /* コマ風影 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail p {
+  color: #2B262E;
+  font-size: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* 画像 */
+.detail img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 3px solid #E4A77E;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #F2C57C;
+  margin-bottom: 15px;
+}
+
+/* 編集リンク・いいねボタン */
+.detail a,
+.detail button {
+  background: #E4A77E;
+  color: #fff;
+  border: 2px solid #E4A77E;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #F2C57C;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.detail a:hover,
+.detail button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 #E4A77E;
+  background: #F2C57C;
+  color: #2B262E;
+}
+
+/* ==========================
+   いいねしたユーザー
+========================== */
+.detail ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px auto;
+  max-width: 700px;
+}
+
+.detail ul li {
+  background: #fff;
+  border: 2px solid #E4A77E;
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  box-shadow: 3px 3px 0 #F2C57C;
+  color: #2B262E;
+}
+
+/* タグ */
+.detail span {
+  display: inline-block;
+  background: #F2C57C;
+  color: #2B262E;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin: 4px;
+  font-size: 14px;
+}
+
+/* ==========================
+   コメント
+========================== */
+.comment-wrapper {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #FAF5EE;
+  border: 3px solid #E4A77E;
+  border-radius: 20px;
+  box-shadow: 6px 6px 0 #F2C57C;
+}
+
+.comment-wrapper p {
+  font-weight: bold;
+  color: #E4A77E;
+  margin-bottom: 12px;
+}
+
+.comment-wrapper div {
+  background: #fff;
+  border: 2px solid #E4A77E;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 0 #F2C57C;
+  color: #2B262E;
+}
+
+.comment-wrapper textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #E4A77E;
+  border-radius: 12px;
+  box-shadow: 3px 3px 0 #F2C57C;
+  font-size: 15px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.comment-wrapper button {
+  background: #E4A77E;
+  color: #fff;
+  border: 2px solid #E4A77E;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #F2C57C;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.comment-wrapper button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 #E4A77E;
+  background: #F2C57C;
+  color: #2B262E;
+}
+
+/* ==========================
+   戻るリンク
+========================== */
+.text3 a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #E4A77E;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.text3 a:hover {
+  color: #F2C57C;
+}

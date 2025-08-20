@@ -1,0 +1,105 @@
+/* ==========================
+   マイページ全体
+========================== */
+
+/* ユーザー情報カード */
+.user1 {
+  border: 3px solid #E4A77E; /* メインカラー */
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 6px 6px 0 #F2C57C; /* コマ風影 */
+  text-align: center;
+}
+
+.user1 h1 {
+  color: #E4A77E;
+  font-size: 32px;
+  font-weight: 900;
+  text-shadow: 2px 2px #F2C57C;
+  margin-bottom: 20px;
+}
+
+.user1 p {
+  color: #2B262E;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.user1 a {
+  display: inline-block;
+  margin-top: 15px;
+  background: #E4A77E;
+  color: #fff;
+  border: 2px solid #E4A77E;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 3px 3px 0 #F2C57C;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.user1 a:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 #E4A77E;
+  background: #F2C57C;
+  color: #2B262E;
+}
+
+/* ==========================
+   ユーザー投稿一覧
+========================== */
+.user2 {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #FAF5EE;
+  border: 3px solid #E4A77E;
+  border-radius: 20px;
+  box-shadow: 6px 6px 0 #F2C57C;
+}
+
+.user2 h2 {
+  color: #E4A77E;
+  font-size: 28px;
+  font-weight: 900;
+  text-shadow: 2px 2px #F2C57C;
+  margin-bottom: 20px;
+}
+
+/* 個別ツイートカード */
+.user2 .tweet-card {
+  background: #fff;
+  border: 2px solid #E4A77E;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 3px 3px 0 #F2C57C;
+  color: #2B262E;
+}
+
+.user2 .tweet-card .tweet-user {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.user2 .tweet-card .tweet-title {
+  font-size: 16px;
+}
+
+/* 戻るリンク */
+.user2 a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #E4A77E;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.user2 a:hover {
+  color: #F2C57C;
+}
