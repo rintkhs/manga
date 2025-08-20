@@ -4,25 +4,35 @@
 
 /* ユーザー情報カード */
 .user1 {
-  border: 3px solid #E4A77E; /* メインカラー */
+  border: 3px solid #9999A1; /* メインカラー置換 */
   border-radius: 20px;
   padding: 20px;
   max-width: 700px;
   margin: 20px auto;
-  box-shadow: 6px 6px 0 #F2C57C; /* コマ風影 */
+  box-shadow: 6px 6px 0 #66666E; /* コマ風影 */
   text-align: center;
+  background: #F4F4F6; /* 背景明るめグレー */
 }
 
 .user1 h1 {
-  color: #E4A77E;
+  color: #66666E; 
+  display: inline;
+  padding-bottom: 2px; /* 文字との間隔 */
+  background-image: linear-gradient(
+    rgba(255, 217, 61, 0.6), /* 半透明黄色 */
+    rgba(255, 217, 61, 0.6)
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.5em; /* 高さを文字の半分に調整 */
+  background-position: 0 80%;    /* 線の位置調整（文字下寄せ） */
   font-size: 32px;
   font-weight: 900;
-  text-shadow: 2px 2px #F2C57C;
+  text-shadow: 2px 2px #9999A1;
   margin-bottom: 20px;
 }
 
 .user1 p {
-  color: #2B262E;
+  color: #000000;
   font-size: 16px;
   margin-bottom: 12px;
 }
@@ -30,22 +40,22 @@
 .user1 a {
   display: inline-block;
   margin-top: 15px;
-  background: #E4A77E;
-  color: #fff;
-  border: 2px solid #E4A77E;
+  background: #9999A1; /* 指し色黄色 */
+  color: #000000;
+  border: 2px solid #9999A1;
   padding: 8px 14px;
   border-radius: 12px;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: 3px 3px 0 #F2C57C;
+  box-shadow: 3px 3px 0 #FFD93D;
   transition: transform 0.1s ease, background 0.2s ease;
 }
 
 .user1 a:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0 #E4A77E;
-  background: #F2C57C;
-  color: #2B262E;
+  box-shadow: 5px 5px 0 #FFD93D;
+  background: #9999A1;
+  color: #F4F4F6;
 }
 
 /* ==========================
@@ -55,29 +65,37 @@
   max-width: 700px;
   margin: 30px auto;
   padding: 20px;
-  background: #FAF5EE;
-  border: 3px solid #E4A77E;
+  background: #E6E6E9;
+  border: 3px solid #9999A1;
   border-radius: 20px;
-  box-shadow: 6px 6px 0 #F2C57C;
+  box-shadow: 6px 6px 0 #66666E;
 }
 
 .user2 h2 {
-  color: #E4A77E;
+  color: #66666E; 
   font-size: 28px;
   font-weight: 900;
-  text-shadow: 2px 2px #F2C57C;
+  text-shadow: 2px 2px #9999A1;
   margin-bottom: 20px;
+  display: inline;
+  padding-bottom: 2px; /* 文字との間隔 */
+  background-image: linear-gradient(
+    rgba(255, 217, 61, 0.6), /* 半透明黄色 */
+    rgba(255, 217, 61, 0.6)
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.5em; /* 高さを文字の半分に調整 */
+  background-position: 0 80%;    /* 線の位置調整（文字下寄せ） */
 }
 
 /* 個別ツイートカード */
 .user2 .tweet-card {
-  background: #fff;
-  border: 2px solid #E4A77E;
+  background: #F4F4F6;
+  border: 2px solid #66666E;
   border-radius: 12px;
   padding: 12px;
   margin-bottom: 12px;
-  box-shadow: 3px 3px 0 #F2C57C;
-  color: #2B262E;
+  
 }
 
 .user2 .tweet-card .tweet-user {
@@ -94,12 +112,12 @@
   display: block;
   text-align: center;
   margin-top: 20px;
-  color: #E4A77E;
+  color: #66666E; 
   font-weight: bold;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .user2 a:hover {
-  color: #F2C57C;
+  color: #9999A1;
 }

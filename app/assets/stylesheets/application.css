@@ -39,72 +39,74 @@ body {
     linear-gradient(180deg,  rgba(0, 0, 0, 0.15) 2px, transparent 2px);
   background-size: 220px 220px; /* コマの大きさ */
   z-index: -1; /* 背景なので一番後ろに */
+  background-image: url("don.jpg");
+  background-size: cover;
 }
 
-
-/* ===========================
-   ヘッダー 
-=========================== */
-header {
-  position: relative;
-  width: 100%;
-  background: #f77a9f; /* ポップなピンク */
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 28px;
-  border-bottom: 6px solid #747884; /* 漫画チックな濃い線 */
-  box-shadow: 0 6px 0 #adafba; /* 漫画風の立体感 */
-  font-weight: bold;
-}
-
-/* タイトル部分 */
-header h1 {
-  font-size: 28px;
-  font-weight: 900;
-  margin: 0;
-  color: #fff;
-  text-shadow: 3px 3px #747884;
-  letter-spacing: 2px;
-  background: #747884;
+/* =========================== ヘッダー =========================== */ 
+header { 
+  position: relative; 
+  width: 100%; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 14px 28px; 
+  font-weight: bold; 
+  border-radius: 20px; 
+  box-sizing: border-box; 
+  background: #E6E6E9;
+  color: #000000;
+  border-bottom: 6px solid #66666E;
+  box-shadow: 0 6px 0 #9999A1;
+} 
+  
+  /* タイトル部分 */ 
+  
+header h1 { 
+  font-size: 28px; 
+  font-weight: 900; 
+  margin: 0; 
+  letter-spacing: 2px; 
   padding: 6px 14px;
-  border-radius: 14px;
-  transform: skew(-6deg);
+  border-radius: 14px; 
+  transform: skew(-6deg); 
+  background: #66666E;
+  color: #F4F4F6;
+  text-shadow: 2px 2px #000000;
 }
+  
+  /* =========================== ナビリンク =========================== */ 
+  .header-list ul { 
+    display: flex; 
+    gap: 16px; 
+    list-style: none; 
+    margin: auto; 
+    padding: auto; 
+    justify-content: center; 
+  } 
+  
+  .header-list li { 
+    display: block; 
+  } 
+  
+  header a { 
+    display: block; 
+    padding: 8px 16px; 
+    border-radius: 20px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: all 0.25s ease; 
+    background: #F4F4F6;
+    border: 3px solid #66666E;
+    box-shadow: 3px 3px 0 #66666E;
+    color: #000000;
+  }
+  
 
-/* ===========================
-   ナビリンク 
-=========================== */
-.header-list ul {
-  display: flex;
-  gap: 16px;
-  list-style: none;
-  margin: auto;
-  padding: auto;
-  justify-content: center;
-}
-
-.header-list li {
-  display: block;
-}
-
-header a {
-  display: block;
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  background: #adafba;
-  border: 3px solid #747884;
-  transition: all 0.25s ease;
-  box-shadow: 3px 3px 0 #747884;
-}
-
+/* ホバー時（緑指し色） */
 header a:hover {
-  background: #f77a9f;
-  color: #fff;
+  background: #f9dd6a;
+  color: #F4F4F6;
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0 #747884;
+  box-shadow: 5px 5px 0 #66666E;
 }

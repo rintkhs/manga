@@ -4,7 +4,7 @@
 body.tweets-new {
   font-family: "M PLUS Rounded 1c", sans-serif;
   padding: 30px;
-  color: #2B262E;
+  color: #000000;
   position: relative;
 }
 
@@ -12,34 +12,28 @@ body.tweets-new {
    フォームコンテナ
 ========================== */
 body.tweets-new form {
-  width: 750px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 40px;
-  background: #fff;
-  border: 3px solid #E4A77E;  /* メインカラー */
+  background: #F4F4F6;
+  border: 3px solid #9999A1;  /* メインカラー */
   border-radius: 20px;
-  box-shadow: 8px 8px 0 #F2C57C; /* コマ風影 */
+  box-shadow: 8px 8px 0 #66666E; /* コマ風影 */
   position: relative;
 }
 
 /* ==========================
    見出しデザイン
 ========================== */
-.text h1, h3 {
+.text h1 {
   text-align: center;
   font-weight: 900;
-  color: #E4A77E;
-  text-shadow: 2px 2px #F2C57C;
+  color: #66666E;
+  text-shadow: 2px 2px #9999A1;
 }
 
 body.tweets-new h1 {
   font-size: 32px;
   margin-bottom: 15px;
-}
-
-body.tweets-new h3 {
-  font-size: 20px;
-  margin-bottom: 25px;
 }
 
 /* ==========================
@@ -53,8 +47,8 @@ body.tweets-new label {
   display: block;
   font-weight: bold;
   font-size: 16px;
-  color: #2B262E;
-  border-left: 5px solid #F2C57C;
+  color: #000000;
+  border-left: 5px solid #FFD93D;
   padding-left: 8px;
   margin-bottom: 6px;
 }
@@ -63,19 +57,19 @@ body.tweets-new input[type="text"],
 body.tweets-new input[type="file"] {
   width: 100%;
   padding: 10px;
-  border: 2px solid #E4A77E;
+  border: 2px solid #9999A1;
   border-radius: 12px;
-  box-shadow: 3px 3px 0 #F2C57C;
+  box-shadow: 3px 3px 0 #66666E;
   font-size: 15px;
-  background: #fff;
+  background: #F4F4F6;
   transition: all 0.2s ease;
 }
 
 body.tweets-new input[type="text"]:focus,
 body.tweets-new input[type="file"]:focus {
   outline: none;
-  border-color: #F2C57C;
-  background: #FAF5EE;
+  border-color: #FFD93D;
+  background: #E6E6E9;
 }
 
 /* ==========================
@@ -84,15 +78,15 @@ body.tweets-new input[type="file"]:focus {
 body.tweets-new .form-group {
   margin: 20px 0;
   padding: 10px;
-  border: 2px dashed #E4A77E;
+  border: 2px dashed #9999A1;
   border-radius: 12px;
-  background: #fff8f2;
+  background: #F4F4F6;
 }
 
 body.tweets-new .form-check-label {
   cursor: pointer;
   font-size: 14px;
-  color: #2B262E;
+  color: #000000;
 }
 
 /* ==========================
@@ -102,23 +96,23 @@ body.tweets-new input[type="submit"] {
   display: block;
   width: 100%;
   padding: 15px;
-  background: #E4A77E; /* メインカラー */
-  color: #fff;
-  border: 3px solid #E4A77E;
+  background: #9999A1; /* 指し色 */
+  color: #000000;
+  border: 3px solid #9999A1;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 16px;
   letter-spacing: 2px;
-  box-shadow: 6px 6px 0 #F2C57C;
+  box-shadow: 6px 6px 0 #FFD93D;
   transition: transform 0.1s ease, background 0.2s ease;
 }
 
 body.tweets-new input[type="submit"]:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 9px 9px 0 #E4A77E;
-  background: #F2C57C;
-  color: #2B262E;
+  box-shadow: 9px 9px 0 #9999A1;
+  background: #f9dd6a;
+  color: #F4F4F6;
 }
 
 /* ==========================
@@ -128,12 +122,12 @@ body.tweets-new input[type="submit"]:hover {
   display: block;
   text-align: center;
   margin-top: 20px;
-  color: #E4A77E;
+  color: #9999A1; /* 指し色 */
   font-weight: bold;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .back a:hover {
-  color: #F2C57C;
+  color: #FFD93D;
 }
