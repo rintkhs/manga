@@ -1,0 +1,85 @@
+/* ==========================
+   ページ全体
+========================== */
+body.perfume-new {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding: 30px;
+}
+
+/* ==========================
+   フォームコンテナ
+========================== */
+.perfume-container {
+  margin:  30px auto ;
+  padding: 25px 35px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 6px 6px 0 #E6E6E9;
+  border: 3px solid #66666e;
+}
+
+/* ==========================
+   質問テキスト
+========================== */
+.perfume-container p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+  border-left: 6px solid #FFD93D;
+  padding-left: 10px;
+}
+
+/* ==========================
+   ラジオボタン
+========================== */
+.perfume-container input[type="radio"] {
+  display: none;
+}
+
+.perfume-container label {
+  display: block;
+  padding: 10px 14px;
+  margin: 6px 0;
+  border: 2px solid #9999A1;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 15px;
+}
+
+/* 選択時のスタイル */
+.perfume-container input[type="radio"]:checked + label {
+  border-color: #FFD93D;
+  background: #FFF7E0;
+  color: #000000;
+  font-weight: bold;
+  box-shadow: 3px 3px 0 #FFD93D;
+}
+
+/* ==========================
+   診断ボタン
+========================== */
+.sindanbotan {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sindanbotan input[type="submit"] {
+  background: #FFD93D;
+  color: #000000;
+  border: none;
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #E6E6E9;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.sindanbotan input[type="submit"]:hover {
+  transform: translate(-3px, -3px);
+  background: #FFE666;
+}

@@ -39,8 +39,6 @@ body {
     linear-gradient(180deg,  rgba(0, 0, 0, 0.15) 2px, transparent 2px);
   background-size: 220px 220px; /* コマの大きさ */
   z-index: -1; /* 背景なので一番後ろに */
-  background-image: url("don.jpg");
-  background-size: cover;
 }
 
 /* =========================== ヘッダー =========================== */ 

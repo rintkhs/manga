@@ -1,3 +1,122 @@
-.perfume-back .perfume-home {
-    color: #000;
+/* ==========================
+   診断結果ページ全体
+========================== */
+body {
+  background-color: #F4F4F6;
+  color: #000000;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+/* 診断結果タイトル部分 */
+.intoro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intoro h5 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 10px;
+  padding-bottom: 2px; /* 文字との間隔 */
+  background-image: linear-gradient(
+    rgba(255, 217, 61, 0.4), /* 半透明黄色 */
+    rgba(255, 217, 61, 0.4)
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.5em; /* 高さを文字の半分に調整 */
+  background-position: 0 80%;    /* 線の位置調整（文字下寄せ） */
+  display: inline-block;
+}
+
+.intoro p {
+  font-size: 16px;
+  color: #66666E;
+  margin-top: 8px;
+}
+
+/* おすすめ漫画コンテナ */
+.manga-container {
+  background-color: #FFFFFF;
+  border: 1px solid #E6E6E9;
+  border-radius: 12px;
+  padding: 25px 30px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* タイプ見出し */
+.manga-container h6 {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 15px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #E6E6E9;
+}
+
+/* おすすめ漫画リスト */
+.manga-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.manga-container li {
+  font-size: 16px;
+  color: #66666E;
+  padding: 6px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* 黄色のアクセント（控えめ） */
+.manga-container li::before {
+  content: "★";
+  color: #FFD93D;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  font-size: 14px;
+  opacity: 0.7; /* 控えめ */
+}
+
+/* ==========================
+   診断ページのボタンデザイン
+========================== */
+
+/* 共通ボタンスタイル */
+.manga-back a,
+.manga-home a {
+  display: block;
+  width: 20%;
+  margin: 15px auto;
+  padding: 5px;
+  color: #9999A1;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 16px;
+  letter-spacing: 2px;
+  transition: transform 0.1s ease, background 0.2s ease;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding-bottom: 2px; /* 文字との間隔 */
+  background-image: linear-gradient(
+    rgba(255, 217, 61, 0.4), /* 半透明黄色 */
+    rgba(255, 217, 61, 0.4)
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.5em; /* 高さを文字の半分に調整 */
+  background-position: 0 80%;    /* 線の位置調整（文字下寄せ） */
+}
+
+/* ホバー時 */
+.manga-back a:hover,
+.manga-home a:hover {
+  transform: translate(-3px, -3px);
+  color: #66666E;
 }
