@@ -8,9 +8,16 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 Tag.create([
-  { name: 'タグ1' },
-  { name: 'タグ2' },
-  { name: 'タグ3' },
-  { name: 'タグ4' },
-  { name: 'タグ5' }
+  { name: '少年' },
+  { name: '少女' },
+  { name: '青年' },
+  { name: 'ファンタジー' },
+  { name: '恋愛' }
+  { name: 'アクション' }
+  { name: 'ミステリー' }
+  { name: 'スポーツ' }
+  { name: '裏社会' }
+  { name: '日常' }
+  { name: 'グルメ' }
+  { name: '動物' }
 ])

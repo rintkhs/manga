@@ -14,6 +14,11 @@
  *= require_self
  */
 
+ * {
+  padding: 0;
+  margin: 0;
+}
+
  /* ===========================
    ベース背景
 =========================== */
@@ -23,6 +28,8 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+
+
 
 /* ==========================
    漫画コマ割り風背景
@@ -43,35 +50,16 @@ body {
 
 /* =========================== ヘッダー =========================== */ 
 header { 
-  position: relative; 
-  width: 100%; 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 14px 28px; 
-  font-weight: bold; 
-  border-radius: 20px; 
-  box-sizing: border-box; 
-  background: #E6E6E9;
-  color: #000000;
-  border-bottom: 6px solid #66666E;
-  box-shadow: 0 6px 0 #9999A1;
+  height: 100px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("ComicPick.jpg");
+  background-size: cover;
 } 
   
-  /* タイトル部分 */ 
-  
-header h1 { 
-  font-size: 28px; 
-  font-weight: 900; 
-  margin: 0; 
-  letter-spacing: 2px; 
-  padding: 6px 14px;
-  border-radius: 14px; 
-  transform: skew(-6deg); 
-  background: #66666E;
-  color: #F4F4F6;
-  text-shadow: 2px 2px #000000;
-}
+
   
   /* =========================== ナビリンク =========================== */ 
   .header-list ul { 

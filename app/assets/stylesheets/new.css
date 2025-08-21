@@ -3,7 +3,6 @@
 ========================== */
 body.tweets-new {
   font-family: "M PLUS Rounded 1c", sans-serif;
-  padding: 30px;
   color: #000000;
   position: relative;
 }
@@ -12,7 +11,7 @@ body.tweets-new {
    フォームコンテナ
 ========================== */
 body.tweets-new form {
-  margin: 20px auto;
+  margin: 20px 60px;
   padding: 40px;
   background: #F4F4F6;
   border: 3px solid #9999A1;  /* メインカラー */
@@ -28,7 +27,7 @@ body.tweets-new form {
   text-align: center;
   font-weight: 900;
   color: #66666E;
-  text-shadow: 2px 2px #9999A1;
+  text-shadow: 2px 2px #f9dd6a;
 }
 
 body.tweets-new h1 {

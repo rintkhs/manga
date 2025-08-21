@@ -1,14 +1,7 @@
 /* ==========================
    診断結果ページ全体
 ========================== */
-body {
-  background-color: #F4F4F6;
-  color: #000000;
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  margin: 0;
-  padding: 20px;
-  line-height: 1.8;
-}
+
 
 /* 診断結果タイトル部分 */
 .intoro {

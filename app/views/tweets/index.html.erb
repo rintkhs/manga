@@ -10,23 +10,7 @@
    </div>
  </section>
 
- <!-- タグ検索フォーム（ツイート一覧とは別） -->
- <div class="tag-forms">
-  <%= form_tag({controller:"tweets", action:"index"}, method: :get, class: "tag-search-form") do %>
-    <% Tag.all.each do |tag| %>
-      <li>
-        <%= check_box_tag "tag_ids[]", tag.id %>
-        <%= tag.name %>
-      </li>
-    <% end %>
-    <%= submit_tag "検索" %>
-  <% end %>
 
-  <%= form_tag({controller:"tweets", action:"index"}, method: :get, class: "tag-add-form") do %>
-    <%= text_field_tag :tag %>
-    <%= submit_tag "タグを追加" %>
-  <% end %>
- </div>
 
  <div class="tweets-text">
    <h2>投稿一覧</h2>
